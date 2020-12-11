@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Home"
+    android:orientation="vertical"
+    android:gravity="center">
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="250dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginBottom="20dp">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/user" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:weightSum="1"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:paddingLeft="50dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_weight=".2">
+            <TextView
+                android:layout_marginBottom="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Username: "
+                android:textSize="20dp"/>
+            <TextView
+                android:layout_marginBottom="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Email:"
+                android:textSize="20dp"/>
+            <TextView
+                android:layout_marginBottom="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Phone"
+                android:textSize="20dp"/>
+            <TextView
+                android:layout_marginBottom="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Age"
+                android:textSize="20dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_weight=".5">
+            <TextView
+                android:layout_marginBottom="15dp"
+                android:id="@+id/username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Enter Username"
+                android:textSize="20dp"/>
+
+            <TextView
+                android:id="@+id/email"
+                android:layout_marginBottom="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Enter Username"
+                android:textSize="20dp" />
+            <TextView
+                android:id="@+id/phone"
+                android:layout_marginBottom="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Enter Username"
+                android:textSize="20dp"/>
+            <TextView
+                android:id="@+id/age"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Enter Username"
+                android:textSize="20dp"
+                android:layout_marginBottom="15dp"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+<!--    <Button-->
+<!--        android:id="@+id/update"-->
+<!--        android:gravity="center"-->
+<!--        android:layout_marginVertical="15dp"-->
+<!--        android:layout_width="350dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="update"-->
+<!--        android:onClick="update"-->
+<!--        />-->
+
+    <Button
+        android:id="@+id/singout"
+        android:gravity="center"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:text="SignOut"
+        android:onClick="Login"
+        />
+</LinearLayout>
